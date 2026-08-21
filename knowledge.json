@@ -1,0 +1,344 @@
+[
+  {
+    "week": 1,
+    "theme": "Leading Self",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading Self in Healthcare",
+    "focus": "Leadership identity, derailers, resilience, ethical leadership, and leadership under pressure.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading self behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 1,
+    "theme": "Leading Self",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading Self in Higher Education",
+    "focus": "Academic and administrative identity, credibility, authority versus influence, mission, and values-driven leadership.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading self behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 1,
+    "theme": "Leading Self",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading Self in the Family Enterprise",
+    "focus": "Founder or successor identity, role clarity, authority, boundaries, values, and leadership credibility.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading self behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 2,
+    "theme": "Leading Relationships",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading Healthcare Relationships",
+    "focus": "Interprofessional communication, role clarity, psychological safety, difficult conversations, conflict, and influence without authority.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading relationships behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 2,
+    "theme": "Leading Relationships",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading Relationships in Higher Education",
+    "focus": "Shared governance, faculty-administrator communication, stakeholder mapping, coalition building, trust, transparency, and conflict.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading relationships behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 2,
+    "theme": "Leading Relationships",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading Family & Business Relationships",
+    "focus": "Intergenerational communication, family versus business conversations, emotional dynamics, boundaries, conflict, and family/non-family executive relationships.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading relationships behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 3,
+    "theme": "Leading Teams",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading Healthcare Teams",
+    "focus": "6C team principles, trust, interdependence, accountability, team norms, collaborative decision-making, and team learning.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading teams behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 3,
+    "theme": "Leading Teams",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading Through Influence & Collaboration",
+    "focus": "6C team effectiveness, role clarity, collaboration, decision-making, psychological safety, meeting effectiveness, and cross-functional leadership.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading teams behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 3,
+    "theme": "Leading Teams",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading an Aligned Enterprise Team",
+    "focus": "6C team effectiveness, family/non-family team dynamics, role clarity, decision rights, accountability, power dynamics, and executive-team alignment.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading teams behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 4,
+    "theme": "Leading Performance",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading Performance in Healthcare",
+    "focus": "Coaching, feedback, delegation, expectations, accountability, performance conversations, and development of clinicians and staff.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading performance behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 4,
+    "theme": "Leading Performance",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading Performance in Higher Education",
+    "focus": "Coaching faculty and staff, feedback, performance conversations, delegation, talent pipelines, emerging leader development, and mentoring versus coaching.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading performance behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 4,
+    "theme": "Leading Performance",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading Performance & Developing the Next Generation",
+    "focus": "Coaching successors, readiness, delegation, accountability, stretch assignments, family-member development, non-family talent, and leadership pipeline.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading performance behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 5,
+    "theme": "Leading Change",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading Change in Healthcare",
+    "focus": "Change readiness, resistance, stakeholder mapping, culture change, change fatigue, influence, and communication during change.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading change behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 5,
+    "theme": "Leading Change",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading Institutional Change",
+    "focus": "Change resistance, change fatigue, stakeholder inclusion, enrollment and financial pressures, innovation, institutional politics, and strategic communication.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading change behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 5,
+    "theme": "Leading Change",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading Change & Transition",
+    "focus": "Succession readiness, founder transition, successor transition, transfer of authority, letting go, knowledge transfer, stakeholder communication, governance, and retirement identity.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading change behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 6,
+    "theme": "Leading the System / Institution / Enterprise",
+    "sector": "healthcare",
+    "sectorLabel": "Healthcare",
+    "title": "Leading the Healthcare System",
+    "focus": "Systems thinking, strategic leadership, organizational stewardship, mission, quality, talent pipeline, succession, and leadership legacy.",
+    "competencyEmphasis": "IPEC-informed emphasis on values and ethics, roles and responsibilities, interprofessional communication, teams and teamwork, quality and safety, accountability, resilience, boundary spanning, change, and systems leadership.",
+    "questions": [
+      "What outcome matters most in this healthcare context?",
+      "Which leading the system / institution / enterprise behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 6,
+    "theme": "Leading the System / Institution / Enterprise",
+    "sector": "higher-education",
+    "sectorLabel": "Higher Education",
+    "title": "Leading the Institution",
+    "focus": "Mission stewardship, systems thinking, student success, strategic resource decisions, governance, institutional culture, succession, and leadership legacy.",
+    "competencyEmphasis": "OX competency emphasis on shared governance, trust, influence without authority, stakeholder engagement, faculty-administrator communication, mission, political acumen, resilience, resource stewardship, and collaborative change.",
+    "questions": [
+      "What outcome matters most in this higher education context?",
+      "Which leading the system / institution / enterprise behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  },
+  {
+    "week": 6,
+    "theme": "Leading the System / Institution / Enterprise",
+    "sector": "family-enterprise",
+    "sectorLabel": "Family & Private Enterprise",
+    "title": "Leading the Enterprise Across Generations",
+    "focus": "Stewardship, governance, ownership versus management, legacy, family values, business strategy, professionalization, next-generation development, culture, and founder next chapter.",
+    "competencyEmphasis": "OX competency emphasis on founder and successor identity, family/business/ownership role clarity, governance, decision rights, succession readiness, intergenerational communication, stewardship, legacy, continuity, and transition leadership.",
+    "questions": [
+      "What outcome matters most in this family & private enterprise context?",
+      "Which leading the system / institution / enterprise behavior would have the greatest impact now?",
+      "What stakeholder perspective, role boundary, or system condition needs to be considered?"
+    ],
+    "actions": [
+      "Define the desired outcome and observable evidence",
+      "Map stakeholders, roles, authority, and constraints",
+      "Choose one conversation or experiment and set a review point"
+    ]
+  }
+]
