@@ -1,0 +1,80 @@
+{
+  "learning_pathways": {
+    "healthcare": [
+      "Emerging Clinical Leader",
+      "Charge Nurse to Manager",
+      "Physician Leader Development",
+      "Director to Executive",
+      "Quality & Safety Leadership",
+      "System Leadership & Stewardship"
+    ],
+    "higher_education": [
+      "Faculty to Chair",
+      "Chair to Dean",
+      "Dean to Vice President",
+      "Shared Governance Leader",
+      "Enrollment & Strategy Leader",
+      "Institutional Stewardship"
+    ],
+    "family_enterprise": [
+      "Next Generation Leader",
+      "Successor Readiness",
+      "Family Governance Leader",
+      "Owner-Operator Development",
+      "Executive Alignment",
+      "Multi-Generational Stewardship"
+    ]
+  },
+  "leadership_simulations": [
+    {
+      "title": "Clinical Sentinel Event",
+      "sector": "Healthcare",
+      "objective": "Lead after a significant patient-safety event while maintaining trust and accountability."
+    },
+    {
+      "title": "Physician-Administrator Alignment",
+      "sector": "Healthcare",
+      "objective": "Navigate competing priorities around quality, access, and finances."
+    },
+    {
+      "title": "Faculty Budget Crisis",
+      "sector": "Higher Education",
+      "objective": "Lead shared-governance discussions during resource constraints."
+    },
+    {
+      "title": "Enrollment Decline Response",
+      "sector": "Higher Education",
+      "objective": "Build coalitions and communicate difficult strategic choices."
+    },
+    {
+      "title": "Founder Retirement",
+      "sector": "Family Enterprise",
+      "objective": "Manage authority transfer and stakeholder confidence."
+    },
+    {
+      "title": "Sibling Leadership Transition",
+      "sector": "Family Enterprise",
+      "objective": "Create role clarity and governance discipline."
+    }
+  ],
+  "reflection_journal_prompts": [
+    "What leadership behavior had the greatest positive impact this week and why?",
+    "Where did I avoid a difficult conversation and what was the consequence?",
+    "How did I build trust across stakeholders this week?",
+    "What assumptions influenced my decisions?",
+    "What am I learning about my leadership identity?",
+    "How well am I balancing stewardship of today with preparation for the future?",
+    "What feedback did I receive and how will I apply it?",
+    "Where did I demonstrate courage, humility, and accountability?"
+  ],
+  "feedback_indicators_extended": [
+    "Demonstrates systems thinking",
+    "Builds cross-functional trust",
+    "Develops future leaders",
+    "Acts as a steward of mission and values",
+    "Communicates transparently during uncertainty",
+    "Creates psychological safety",
+    "Leads through influence rather than authority",
+    "Balances short-term priorities with long-term strategy"
+  ]
+}
