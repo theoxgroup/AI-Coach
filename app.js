@@ -1,14 +1,22 @@
-import {CreateMLCEngine} from "https://esm.run/@mlc-ai/web-llm";
-const $=s=>document.querySelector(s);
-const MODEL="Llama-3.2-1B-Instruct-q4f16_1-MLC";
-let engine=null, history=[], kb=await fetch("ox_knowledge.json").then(r=>r.json());
-function words(s){return new Set((s.toLowerCase().match(/[a-z]{3,}/g)||[]))}
-function score(q,x){const a=words(q),b=words(JSON.stringify(x));let n=0;for(const w of a)if(b.has(w))n++;return n}
-function retrieve(q){return kb.topics.map(x=>[score(q,x),x]).sort((a,b)=>b[0]-a[0]).slice(0,3).map(x=>x[1])}
-function msg(t,c){const d=document.createElement("div");d.className=c;d.textContent=t;$("#chat").append(d);$("#chat").scrollTop=$("#chat").scrollHeight;return d}
-function fallback(q){const x=retrieve(q)[0];return `Before advising, consider:\n• ${x.questions.join("\n• ")}\n\nLeadership approach:\n${x.framework}\n\nNext steps:\n1. ${x.actions[0]}\n2. ${x.actions[1]}\n3. ${x.actions[2]}\n\nThis is leadership-development guidance; use qualified organizational resources for legal, clinical, medical, HR, regulatory, or policy decisions.`}
-async function dispose(){try{if(engine?.unload)await engine.unload()}catch{}engine=null}
-$("#load").onclick=async()=>{if(!navigator.gpu){$("#status").textContent="WebGPU unavailable; knowledge fallback remains active.";return}$("#load").disabled=true;$("#status").textContent="Preparing lightweight model...";try{await dispose();engine=await CreateMLCEngine(MODEL,{initProgressCallback:p=>$("#status").textContent=p.text||"Loading..."});$("#status").textContent="AI ready — low-memory mode";$("#load").textContent="AI loaded"}catch(e){console.error(e);await dispose();$("#status").textContent="AI model unavailable; knowledge fallback remains active.";$("#load").disabled=false}}
-const system=`You are OX Leadership Coach. Be concise, practical, respectful, and executive-level. Ask one diagnostic question, then give a framework, suggested language, and three next steps. Use only the retrieved OX content for framework claims. Never invent citations. Never provide legal, medical, clinical, financial, regulatory, accreditation, or employment-law advice. Never request confidential information.`;
-$("form").onsubmit=async e=>{e.preventDefault();const q=$("#q").value.trim();if(!q)return;$("#q").value="";msg(q,"user");const out=msg("Thinking...","bot"),ctx=retrieve(q);$("#send").disabled=true;if(!engine){out.textContent=fallback(q);$("#send").disabled=false;return}try{const stream=await engine.chat.completions.create({messages:[{role:"system",content:system},...history.slice(-2),{role:"user",content:`Sector: ${$("#sector").value}\nOX content: ${JSON.stringify(ctx)}\nQuestion: ${q}`}],temperature:.25,top_p:.85,max_tokens:300,stream:true});let a="";out.textContent="";for await(const p of stream){a+=p.choices[0]?.delta?.content||"";out.textContent=a}history=[{role:"user",content:q},{role:"assistant",content:a}]}catch(err){console.error(err);out.textContent=fallback(q)+"\n\nThe local AI was stopped because the browser GPU could not complete the request.";await dispose();$("#status").textContent="AI stopped to protect device memory; knowledge fallback remains active.";$("#load").disabled=false;$("#load").textContent="Reload lightweight AI"}finally{$("#send").disabled=false}}
-document.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>{$("#q").value=b.dataset.q;$("form").requestSubmit()});
+let kb;
+const $ = (s) => document.querySelector(s);
+fetch("ox_knowledge.json").then((r) => r.json()).then((x) => { kb = x; });
+function words(s) { return new Set(s.toLowerCase().match(/[a-z]{3,}/g) || []); }
+function score(q, x) { let a=words(q), b=words(JSON.stringify(x)), n=0; for (const w of a) if (b.has(w)) n++; for (const k of (x.keywords || [])) if (q.toLowerCase().includes(k)) n+=5; return n; }
+function best(q) { return kb.topics.map((x)=>[score(q,x),x]).sort((a,b)=>b[0]-a[0]).slice(0,3).map((x)=>x[1]); }
+function msg(t,c) { const d=document.createElement("div"); d.className=c; d.textContent=t; $("#chat").append(d); $("#chat").scrollTop=$("#chat").scrollHeight; }
+function answer(q) {
+  const xs=best(q), x=xs[0], mode=$("#mode").value, sector=$("#sector").value;
+  if (mode === "360") {
+    const ind=kb.indicators.slice(0,8);
+    return "360 feedback guidance for " + sector + ":\n\n" + ind.map((i)=>"• "+i.domain+": "+i.indicator).join("\n") + "\n\nUse this scale: " + ind[0].scale + "\nAsk raters: " + ind[0].prompt;
+  }
+  if (mode === "simulate") {
+    const sim=kb.simulations.find((z)=>z.title===x.title) || kb.simulations[0];
+    return "Simulation — " + sim.title + "\n\nLeader opening:\n“" + sim.opening + "”\n\nPossible response:\n“" + sim.employee_replies[0] + "”\n\nYour task: Write your next two sentences. Effective moves include:\n• " + sim.leader_moves.join("\n• ");
+  }
+  const script = mode === "script" ? "\n\nSuggested opening:\n“I want to discuss [specific pattern] because it is affecting [shared outcome]. I will describe what I observed, then I want to understand your perspective.”\n\nFollow with:\n“In [situation], I observed [behavior]. The impact was [impact]. How do you see it?”" : "";
+  return "Before advising, consider:\n• " + x.questions.join("\n• ") + "\n\nLeadership approach for " + sector + ":\n" + x.framework + script + "\n\nNext steps:\n1. " + x.actions[0] + "\n2. " + x.actions[1] + "\n3. " + x.actions[2] + "\n\nRelated lenses: " + xs.slice(1).map((z)=>z.title).join("; ") + "\n\nUse qualified organizational resources for legal, clinical, medical, HR, regulatory, financial, or policy decisions.";
+}
+$("form").onsubmit=(e)=>{ e.preventDefault(); const q=$("#q").value.trim(); if(!q || !kb) return; $("#q").value=""; msg(q,"user"); msg(answer(q),"bot"); };
+document.querySelectorAll("[data-q]").forEach((b)=>{ b.onclick=()=>{ $("#q").value=b.dataset.q; $("form").requestSubmit(); }; });

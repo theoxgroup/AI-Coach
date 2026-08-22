@@ -1,12 +1,829 @@
 {
+  "metadata": {
+    "version": "5.0-no-webgpu",
+    "notice": "Original OX learning content. Leadership development only; not legal, medical, clinical, HR, regulatory, financial, or policy advice."
+  },
   "topics": [
-    {"title":"Underperformance","keywords":["underperform","poor performance","low productivity","missed deadline","quality"],"questions":["What observable facts show the gap?","Was the standard clearly understood?","Is the main factor skill, clarity, capacity, motivation, process, or context?"],"framework":"Describe the specific situation and behavior, explain impact, invite the employee's perspective, clarify the required standard, agree on support and a review date.","actions":["Prepare two specific examples","Ask what is contributing","Agree on one measurable improvement and follow-up date"]},
-    {"title":"Chronic lateness","keywords":["late","lateness","attendance","tardy","on time"],"questions":["What pattern and impact can be documented?","Was the schedule expectation explicit?","Is there a barrier the employee wants to discuss through the appropriate process?"],"framework":"Address the pattern promptly and privately. Focus on attendance behavior and operational impact, invite perspective, restate the standard, and follow organizational policy.","actions":["Document dates and impact","Clarify the expected arrival standard","Agree on next steps and review consistently"]},
-    {"title":"Employee coaching","keywords":["coach employee","coaching","develop employee","growth"],"questions":["What outcome does the employee want?","What capability would create the greatest impact?","What options has the employee considered?"],"framework":"Coach through questions before advice. Help the employee define the goal, examine current reality, generate options, and choose a commitment.","actions":["Ask before advising","Create a small practice assignment","Schedule a learning review"]},
-    {"title":"Difficult conversations","keywords":["difficult conversation","conflict","feedback","behavior"],"questions":["What is the shared outcome?","Which facts can be observed directly?","What response are you prepared to hear?"],"framework":"Open with purpose, describe observations without labels, explain impact, ask for perspective, clarify expectations, and close with an agreement.","actions":["Write a neutral opening","Rehearse three open questions","Set a follow-up date"]},
-    {"title":"Healthcare leadership","keywords":["healthcare","clinical","physician","nurse","patient","safety"],"questions":["What patient, workforce, quality, or operational outcome is involved?","Which professional roles and expertise must be included?","What safety concern requires escalation?"],"framework":"Use interprofessional role clarity, respectful communication, shared goals, situation awareness, mutual support, and organizational safety processes.","actions":["Clarify roles and shared outcome","Invite each discipline's evidence","Escalate safety or clinical issues through qualified channels"]},
-    {"title":"Higher education leadership","keywords":["faculty","dean","chair","higher education","university","college","governance"],"questions":["What decision rights or governance process applies?","Whose voice and expertise are needed?","How does the issue connect to mission and student success?"],"framework":"Distinguish consultation, recommendation, and decision authority. Build process credibility through transparency, stakeholder inclusion, and clear follow-through.","actions":["Map decision rights","Engage affected stakeholders early","Explain how input shaped the decision"]},
-    {"title":"Family enterprise leadership","keywords":["family business","founder","successor","ownership","family enterprise","next generation"],"questions":["Is this a family, ownership, or management issue?","Who has decision authority?","What transition or governance mechanism is needed?"],"framework":"Separate family, ownership, and business roles. Clarify forums, decision rights, standards, and transition milestones while preserving relationships and enterprise continuity.","actions":["Name the role each person is speaking from","Move the issue to the correct forum","Document authority and transition milestones"]},
-    {"title":"360 leadership feedback","keywords":["360","assessment","leadership indicator","feedback indicator"],"questions":["Which behavior should raters observe?","What examples support the rating?","What strength and development priority emerge?"],"framework":"Use observable behaviors across Leading Self, Relationships, Teams, Performance, Change, and the System. Avoid personality labels.","actions":["Select one behavior domain","Gather examples from multiple perspectives","Create a 30-day experiment"]}
+    {
+      "id": 1,
+      "title": "Underperformance",
+      "keywords": [
+        "underperform",
+        "poor performance",
+        "low productivity",
+        "missed deadline",
+        "quality issue"
+      ],
+      "questions": [
+        "What observable facts show the performance gap?",
+        "Was the standard clearly understood and realistically achievable?",
+        "Is the primary factor skill, clarity, capacity, motivation, process, relationship, or context?"
+      ],
+      "framework": "Address specific behavior and results rather than personality. Explain impact, invite perspective, diagnose contributing factors, clarify the required standard, and agree on support plus a review date.",
+      "actions": [
+        "Prepare two specific examples",
+        "Ask what is contributing",
+        "Set one measurable commitment and follow-up date"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chronic lateness and attendance",
+      "keywords": [
+        "late",
+        "lateness",
+        "tardy",
+        "attendance",
+        "coming in late"
+      ],
+      "questions": [
+        "What pattern can be documented?",
+        "What operational or team impact is occurring?",
+        "Was the schedule standard explicit?"
+      ],
+      "framework": "Address the pattern promptly and privately. Focus on observable attendance behavior and impact, invite perspective, restate the standard, and follow organizational policy consistently.",
+      "actions": [
+        "Document dates and impact",
+        "Clarify the arrival expectation",
+        "Agree on next steps and review consistently"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Employee coaching",
+      "keywords": [
+        "coach employee",
+        "coaching employees",
+        "develop employee",
+        "growth plan"
+      ],
+      "questions": [
+        "What outcome does the employee want?",
+        "What capability would make the greatest difference?",
+        "What options has the employee considered?"
+      ],
+      "framework": "Use questions before advice. Help the employee clarify the goal, current reality, options, and a self-authored commitment.",
+      "actions": [
+        "Ask before advising",
+        "Create a small practice assignment",
+        "Schedule a learning review"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Difficult conversations",
+      "keywords": [
+        "difficult conversation",
+        "hard conversation",
+        "confront",
+        "behavior issue"
+      ],
+      "questions": [
+        "What shared outcome should anchor the discussion?",
+        "Which facts can be observed directly?",
+        "What response are you prepared to hear?"
+      ],
+      "framework": "Open with purpose, describe observations without labels, explain impact, invite perspective, clarify expectations, and close with an explicit agreement.",
+      "actions": [
+        "Write a neutral opening",
+        "Rehearse three open questions",
+        "Set a follow-up date"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Feedback",
+      "keywords": [
+        "feedback",
+        "constructive feedback",
+        "performance review"
+      ],
+      "questions": [
+        "What was the specific situation?",
+        "What behavior was observed?",
+        "What impact occurred?"
+      ],
+      "framework": "Keep feedback timely and specific. Separate observation from interpretation and connect behavior to impact and a future request.",
+      "actions": [
+        "Anchor to a specific situation",
+        "Describe behavior like a camera would",
+        "Ask for an actionable future behavior"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Accountability",
+      "keywords": [
+        "accountability",
+        "hold accountable",
+        "ownership"
+      ],
+      "questions": [
+        "Was the commitment unambiguous?",
+        "Who owns the outcome?",
+        "What evidence and review date were agreed?"
+      ],
+      "framework": "Accountability requires a clear owner, observable deliverable, deadline, support, and consistent review without blame.",
+      "actions": [
+        "Restate owner, outcome, and date",
+        "Surface obstacles early",
+        "Review commitments consistently"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Delegation",
+      "keywords": [
+        "delegate",
+        "delegation",
+        "micromanage"
+      ],
+      "questions": [
+        "What outcome can be transferred?",
+        "What authority and guardrails are appropriate?",
+        "What checkpoints replace constant monitoring?"
+      ],
+      "framework": "Delegate an outcome rather than a script. Define authority, constraints, resources, evidence, and milestone reviews.",
+      "actions": [
+        "Define the quality bar",
+        "Name decision authority",
+        "Schedule milestone reviews"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Conflict",
+      "keywords": [
+        "conflict",
+        "argument",
+        "tension",
+        "disagreement"
+      ],
+      "questions": [
+        "What is the actual point of disagreement?",
+        "What shared outcome exists?",
+        "Which interests and evidence differ?"
+      ],
+      "framework": "State the issue neutrally, distinguish positions from interests, protect respect, and agree on a decision or resolution process.",
+      "actions": [
+        "Name the issue without blame",
+        "Compare evidence and interests",
+        "Document the agreement"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Psychological safety",
+      "keywords": [
+        "psychological safety",
+        "speak up",
+        "fear",
+        "candor"
+      ],
+      "questions": [
+        "What happens when someone challenges an idea?",
+        "Which leader behavior may silence concerns?",
+        "How are mistakes reviewed?"
+      ],
+      "framework": "Invite concerns and dissent while maintaining high standards. Thank people for raising risks and separate learning reviews from blame.",
+      "actions": [
+        "Ask for dissent before deciding",
+        "Reward risk reporting",
+        "Close the loop on concerns"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Change leadership",
+      "keywords": [
+        "change",
+        "resistance",
+        "change fatigue",
+        "transformation"
+      ],
+      "questions": [
+        "What might stakeholders believe they are losing?",
+        "What is known, unknown, and next?",
+        "What behavior proves adoption?"
+      ],
+      "framework": "Diagnose resistance before persuading. Clarify purpose, tradeoffs, participation, support, communication cadence, and evidence of adoption.",
+      "actions": [
+        "Map stakeholders and losses",
+        "Publish known/unknown/next",
+        "Pilot and measure adoption"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Executive presence",
+      "keywords": [
+        "executive presence",
+        "credibility",
+        "influence",
+        "presentation"
+      ],
+      "questions": [
+        "What must the audience understand or decide?",
+        "What evidence and tradeoff matter most?",
+        "What can be removed?"
+      ],
+      "framework": "Credibility comes from clear thinking, composure, concise communication, and reliable follow-through.",
+      "actions": [
+        "Lead with the recommendation",
+        "Name evidence and tradeoffs",
+        "Close with a decision request"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Healthcare clinical leadership",
+      "keywords": [
+        "healthcare",
+        "clinical",
+        "physician",
+        "nurse",
+        "patient safety"
+      ],
+      "questions": [
+        "What patient, workforce, quality, or operational outcome is involved?",
+        "Which professional roles and expertise must be included?",
+        "What issue requires escalation through safety or clinical channels?"
+      ],
+      "framework": "Use interprofessional role clarity, respectful communication, shared goals, situation awareness, mutual support, and proper organizational safety processes.",
+      "actions": [
+        "Clarify roles and shared outcome",
+        "Invite each discipline\u2019s evidence",
+        "Escalate clinical or safety issues through qualified channels"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Healthcare team handoffs",
+      "keywords": [
+        "handoff",
+        "rounds",
+        "interprofessional",
+        "care team"
+      ],
+      "questions": [
+        "Where is information lost?",
+        "Who needs closed-loop confirmation?",
+        "What role or scope assumption is unclear?"
+      ],
+      "framework": "Strengthen handoffs through clear ownership, concise shared information, check-backs, and explicit escalation paths.",
+      "actions": [
+        "Map the handoff",
+        "Add closed-loop confirmation",
+        "Debrief failures without blame"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Higher education shared governance",
+      "keywords": [
+        "faculty",
+        "dean",
+        "chair",
+        "shared governance",
+        "university",
+        "college"
+      ],
+      "questions": [
+        "What decision rights or governance process applies?",
+        "Whose expertise and voice are needed?",
+        "How does the issue connect to mission and student success?"
+      ],
+      "framework": "Distinguish consultation, recommendation, and decision authority. Build process credibility through transparency, inclusion, and follow-through.",
+      "actions": [
+        "Map decision rights",
+        "Engage affected stakeholders early",
+        "Explain how input shaped the decision"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Higher education performance",
+      "keywords": [
+        "faculty performance",
+        "staff performance",
+        "department chair",
+        "academic leader"
+      ],
+      "questions": [
+        "What standard, appointment expectation, or role responsibility applies?",
+        "What evidence is available?",
+        "Which institutional process must be followed?"
+      ],
+      "framework": "Address observable performance while respecting role, governance, policy, and due-process requirements. Involve qualified institutional resources for consequential action.",
+      "actions": [
+        "Clarify the standard and evidence",
+        "Use the appropriate institutional process",
+        "Combine support with a review date"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Family enterprise roles",
+      "keywords": [
+        "family business",
+        "family enterprise",
+        "ownership",
+        "management role"
+      ],
+      "questions": [
+        "Is this a family, ownership, or management issue?",
+        "Which forum should handle it?",
+        "Who has decision authority?"
+      ],
+      "framework": "Separate family, ownership, and business roles. Clarify forums, standards, decision rights, and boundaries.",
+      "actions": [
+        "Name the role each person is speaking from",
+        "Move the issue to the correct forum",
+        "Document decision rights"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Succession planning",
+      "keywords": [
+        "succession",
+        "successor",
+        "founder transition",
+        "next generation"
+      ],
+      "questions": [
+        "What readiness evidence is required?",
+        "How will authority transfer become visible?",
+        "What knowledge and relationships must transfer?"
+      ],
+      "framework": "Treat succession as a staged process involving readiness, authority, knowledge, relationships, governance, contingency planning, and stakeholder communication.",
+      "actions": [
+        "Define readiness criteria",
+        "Transfer decisions in stages",
+        "Create emergency and planned succession milestones"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Family employee performance",
+      "keywords": [
+        "family member employee",
+        "family employee",
+        "relative underperform"
+      ],
+      "questions": [
+        "Would the same standard apply to a non-family employee?",
+        "Which role is being discussed: family, owner, or employee?",
+        "Who should conduct the performance conversation?"
+      ],
+      "framework": "Use consistent business standards while protecting family relationships through clear role boundaries and the appropriate governance forum.",
+      "actions": [
+        "Separate family and employment conversations",
+        "Apply documented role expectations",
+        "Use an impartial reviewer when appropriate"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "360 feedback",
+      "keywords": [
+        "360",
+        "assessment",
+        "leadership indicators",
+        "feedback survey"
+      ],
+      "questions": [
+        "Which observable behavior should be rated?",
+        "What examples support the rating?",
+        "What strength and development priority emerge?"
+      ],
+      "framework": "Use observable behaviors across Leading Self, Relationships, Teams, Performance, Change, and the System. Avoid personality labels and require examples.",
+      "actions": [
+        "Choose one behavior domain",
+        "Gather examples from multiple perspectives",
+        "Create a 30-day experiment"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Meetings and team effectiveness",
+      "keywords": [
+        "meeting",
+        "team effectiveness",
+        "team norms",
+        "collaboration"
+      ],
+      "questions": [
+        "What output must exist when the meeting ends?",
+        "Who is needed and who owns the decision?",
+        "Which norm would improve participation?"
+      ],
+      "framework": "Design meetings for decisions, coordination, learning, or relationships. Clarify purpose, roles, decision method, actions, owners, and dates.",
+      "actions": [
+        "Publish purpose and decision rights",
+        "Use structured participation",
+        "Record decisions and owners"
+      ]
+    }
+  ],
+  "simulations": [
+    {
+      "title": "Underperformance",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Chronic lateness and attendance",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Employee coaching",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Difficult conversations",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Feedback",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Accountability",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Delegation",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Conflict",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Psychological safety",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Change leadership",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Executive presence",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Healthcare clinical leadership",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Healthcare team handoffs",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Higher education shared governance",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Higher education performance",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Family enterprise roles",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Succession planning",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    },
+    {
+      "title": "Family employee performance",
+      "opening": "I want to discuss a pattern I have observed because it is affecting our shared outcomes. I will explain what I have seen, then I want to understand your perspective.",
+      "employee_replies": [
+        "I do not think this is a problem.",
+        "There are factors you do not understand.",
+        "I will work on it."
+      ],
+      "leader_moves": [
+        "Return to observable facts",
+        "Acknowledge the perspective and diagnose barriers",
+        "Clarify expectations, support, evidence, and review date"
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "domain": "Leading Self",
+      "indicator": "Acts consistently with stated values",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Self",
+      "indicator": "Maintains composure under pressure",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Self",
+      "indicator": "Seeks and applies feedback",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Self",
+      "indicator": "Recognizes personal impact",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Relationships",
+      "indicator": "Builds trust",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Relationships",
+      "indicator": "Listens actively",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Relationships",
+      "indicator": "Addresses conflict respectfully",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Relationships",
+      "indicator": "Influences without relying only on authority",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Teams",
+      "indicator": "Clarifies roles",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Teams",
+      "indicator": "Creates psychological safety",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Teams",
+      "indicator": "Enables effective decisions",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Teams",
+      "indicator": "Reinforces accountability",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Performance",
+      "indicator": "Sets clear expectations",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Performance",
+      "indicator": "Provides actionable feedback",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Performance",
+      "indicator": "Coaches development",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Performance",
+      "indicator": "Delegates effectively",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Change",
+      "indicator": "Communicates purpose and tradeoffs",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Change",
+      "indicator": "Engages stakeholders",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Change",
+      "indicator": "Addresses resistance constructively",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading Change",
+      "indicator": "Reinforces adoption",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading the System",
+      "indicator": "Uses systems thinking",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading the System",
+      "indicator": "Stewards mission and resources",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading the System",
+      "indicator": "Develops successors",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    },
+    {
+      "domain": "Leading the System",
+      "indicator": "Balances present and future",
+      "scale": "1 Rarely | 2 Inconsistently | 3 Usually | 4 Consistently | 5 Role model",
+      "prompt": "What observable example most influenced the rating?"
+    }
   ]
 }
