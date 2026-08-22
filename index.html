@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#233F56">
+  <title>OX AI Leadership Coach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="assets/oxLogo.png" alt="The OX logo">
+    <div><strong>OX AI Leadership Coach</strong><span>Cloudflare-powered leadership coaching</span></div>
+    <button id="reset" class="secondary">New conversation</button>
+  </header>
+  <main>
+    <aside>
+      <p class="eyebrow">OX Leadership Development</p>
+      <h1>Direct answers for real leadership situations.</h1>
+      <label>Industry pathway
+        <select id="sector">
+          <option>Cross-Sector</option>
+          <option>Healthcare</option>
+          <option>Higher Education</option>
+          <option>Family & Private Enterprise</option>
+        </select>
+      </label>
+      <label>Coaching mode
+        <select id="mode">
+          <option value="Coach me">Coach me</option>
+          <option value="Conversation script">Conversation script</option>
+          <option value="Difficult-conversation simulation">Difficult-conversation simulation</option>
+          <option value="360-feedback guidance">360-feedback guidance</option>
+        </select>
+      </label>
+      <div class="prompts">
+        <button data-prompt="How do I coach an employee who is underperforming?">Underperformance</button>
+        <button data-prompt="How should I address an employee who repeatedly comes in late?">Repeated lateness</button>
+        <button data-prompt="Help me prepare for a difficult performance conversation.">Difficult conversation</button>
+        <button data-prompt="How do I hold an employee accountable without micromanaging?">Accountability</button>
+        <button data-prompt="How can I coach a high performer for greater leadership responsibility?">Coach a high performer</button>
+        <button data-prompt="Help me handle conflict between two team members.">Team conflict</button>
+      </div>
+      <p id="connection" class="connection">Checking Cloudflare AI…</p>
+    </aside>
+    <section class="chat-panel">
+      <div id="chat" class="chat" aria-live="polite">
+        <article class="message assistant">
+          <div class="avatar">OX</div>
+          <div><strong>Welcome.</strong><p>Choose a pathway and coaching mode, then describe the leadership situation. Please omit confidential details.</p></div>
+        </article>
+      </div>
+      <form id="form">
+        <label class="sr-only" for="question">Leadership question</label>
+        <textarea id="question" maxlength="5000" placeholder="Describe the situation, outcome you want, and constraints…" required></textarea>
+        <button id="send" type="submit">Ask Coach</button>
+      </form>
+      <p class="notice">AI output may be inaccurate. Verify consequential decisions with qualified organizational professionals. Do not enter confidential patient, student, employee, family, ownership, or business information.</p>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
