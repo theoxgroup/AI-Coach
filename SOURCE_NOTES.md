@@ -1,6 +1,0 @@
-- IPEC Core Competencies Version 3: https://www.ipecollaborative.org/ipec-core-competencies — High-level healthcare emphasis on values and ethics, roles and responsibilities, communication, and teams and teamwork. No source text reproduced.
-- AHRQ TeamSTEPPS 3.0: https://www.ahrq.gov/teamstepps-program/index.html — High-level healthcare team emphasis on communication, team leadership, situation monitoring, and mutual support. No source text reproduced.
-- ACE Shared Equity Leadership: https://www.acenet.edu/Research-Insights/Pages/Diversity-Inclusion/Shared-Equity-Leadership.aspx — High-level emphasis on broadly inclusive, collaborative, and distributed institutional leadership. No source text reproduced.
-- AAUP Shared Governance: https://www.aaup.org/shared-governance-0 — High-level emphasis on shared responsibility among boards, administration, and faculty. No source text reproduced.
-- Three-Circle Model: https://johndavis.com/three-circle-model-family-business-system/ — High-level distinction among family, business, and ownership roles. No source text reproduced.
-- CCL SBI: https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/ — High-level feedback structure of situation, behavior, and impact. No source text reproduced.
