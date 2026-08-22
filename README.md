@@ -1,21 +1,23 @@
-# OX AI Leadership Coach — GitHub-ready package
+# OX AI Leadership Coach — Low-Memory Fix
 
-## Included
-- 60 detailed scenarios
-- 30 difficult-conversation scripts
-- 30 practice exercises
-- 120 360-feedback items
-- 60 reflection prompts
-- Browser-based WebLLM app, logo, retrieval logic, and source notes
+This build addresses browser GPU device-loss errors by:
 
-## Upload to GitHub
-1. Extract this ZIP.
+- Switching from `Llama-3.2-1B-Instruct-q4f32_1-MLC` to the lower-memory `Llama-3.2-1B-Instruct-q4f16_1-MLC` model.
+- Retrieving only the top 3 knowledge entries.
+- Limiting output to 300 tokens.
+- Keeping only the latest conversation turn.
+- Automatically unloading the model after a GPU failure.
+- Providing a built-in knowledge fallback, so learners still receive guidance if WebGPU fails.
+
+## Replace files in GitHub
+
+1. Extract the ZIP.
 2. Open `https://github.com/theoxgroup/AI-Coach`.
-3. Select **Add file > Upload files**.
-4. Drag the **contents inside** this extracted folder into the repository upload area. Include `assets/oxLogo.png`.
-5. Commit to the `main` branch. Replace older `index.html`, `app.js`, `styles.css`, and knowledge JSON files when prompted.
-6. In **Settings > Pages**, select **Deploy from a branch**, `main`, and `/(root)`.
-7. Test the published site directly before embedding it in Coursebox.
+3. Choose **Add file > Upload files**.
+4. Upload everything inside this folder.
+5. Replace the old `index.html`, `app.js`, `styles.css`, `ox_knowledge.json`, and `assets/oxLogo.png`.
+6. Commit to `main` with: `Fix WebGPU memory issue and add fallback`.
+7. Wait for GitHub Pages to redeploy.
+8. Test the GitHub Pages URL directly, then test it inside Coursebox.
 
-## Important
-The scenarios are original synthetic learning content, not copied internet case studies. Public frameworks are referenced at a high level in `ox_knowledge.json`. This avoids republishing copyrighted source content. No finite package can guarantee an answer to every possible question; the coach is configured to stay within leadership development and to escalate legal, clinical, medical, financial, regulatory, accreditation, and employment-law questions.
+The first model load still requires internet access and a WebGPU-compatible browser. On constrained devices, the deterministic knowledge fallback will operate without the model.
